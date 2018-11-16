@@ -1,0 +1,468 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+
+* {
+  margin: 0 0 0 0 ;
+  padding: 0;
+  outline: none;
+  border: 0;
+}
+
+body{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+    grid-gap: 3%;
+
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #f2ebe7;
+}
+body::-webkit-scrollbar-thumb {
+    background: #DB3C26;
+}
+
+/*Header logo css*/
+
+.wrap-header{
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end:1;
+}
+.logo{
+  background-color: #DB3C26;
+  width: 22%;
+  height: 17%;
+  padding-bottom: 2%;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+#powells {
+  padding-top: 3%;
+  font-size: 3.5vw;
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+}
+
+.sub-header {
+  font-size: 0.7vw;
+  color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/*Top right menu css*/
+
+.tr-menu{
+  text-align: right;
+  width: 100%;
+  margin-top: 2%;
+  display: block;
+  z-index: 2;
+  height: 10%;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+#account, :visited, #wishlist, :visited, #cart, :visited {
+  display: inline-block;
+  margin-right: 4%;
+  font-size: .7vw;
+  font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+  color: black;
+}
+
+
+#account:hover, #wishlist:hover, #cart:hover{
+  text-decoration: none;
+  color: #DB3C26 ;
+}
+
+
+.tl-menu{
+    text-align: left;
+  width: 100%;
+ margin-top: 1.5%;
+  display: block;
+  z-index: 2;
+  height: 10%;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.tl-menu > input {
+width: 10%;
+}
+.tl-menu > input:hover, input:focus {
+  border-bottom: 1px #DB3C26 solid;
+}
+
+.tl-menu > label{
+  font-size: 1vw;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 2%;
+  color: #DB3C26;
+  font-weight: bold;
+  padding-right: 1%;
+}
+
+/*Main Nav menu css*/
+
+.main-menu{
+  width: 100%;
+  /* position: absolute;
+  top:0;
+  margin: 0;
+  padding-top: 9%; */
+  text-align: center;
+  z-index: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end:2;
+  justify-self: center;
+
+}
+
+.main-menu > a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2vw;
+  font-family: 'Montserrat', sans-serif;
+padding-right: 2%;
+padding-left: 2%;
+ display: inline-block;
+
+}
+
+
+
+.second:hover ~ hr {
+  margin-left: 37.2%;
+}
+
+
+.third:hover ~ hr {
+  margin-left: 45%;
+}
+
+.fourth:hover ~ hr {
+  margin-left: 56.7%;
+}
+
+.fifth:hover ~ hr {
+  margin-left: 67.6%;
+}
+
+hr {
+  height: .25rem;
+  width: 10%;
+  margin: 0;
+  background: #DB3C26;
+  border: none;
+  transition: .3s ease-in-out;
+  margin-left: 26.4%;
+}
+
+
+.first{
+  padding-bottom: .5%;
+}
+
+  /*dropdown menu*/
+
+.sub-menu-class{
+display: none;
+  position: absolute;
+  width: 12%;
+  height: auto;
+  z-index: 2;
+  left: 26%;
+  margin-top: 0.5%;
+  text-align: left;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 9999 !important;
+
+}
+
+
+.dropdown-item{
+  display: block;
+  text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    padding: 3% 3%;
+    background-color: #FFFFFF;
+}
+
+.dropdown-item:hover {
+text-decoration: none;
+background: #DB3C26;
+color: #FFFFFF;
+font-weight: bold;
+}
+
+.show {
+  display: block;
+}
+
+/*promo banner carousel */
+
+.promo-banner {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+  z-index: 0;
+  overflow: hidden;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+#slide {
+display: inline-block;
+width: 80%;
+z-index: 0;
+margin: 0;
+padding: 0;
+}
+
+@media screen and (min-width: 320px) {
+  #slide {
+  max-width: 80%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #slide {
+  max-width: 100%;
+  }
+}
+
+#prev-btn, #next-btn {
+  cursor: pointer;
+  position: absolute;
+  color: red;
+  font-size: 3vw;
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+  z-index: 1;
+  margin-top: 6%;
+}
+
+#next-btn {
+  margin-left: 3%;
+}
+
+#prev-btn {
+    margin-left: -4.5%;
+}
+
+/*Seasonal books div*/
+
+.book-picks{
+  text-align: center;
+  max-width: 100%;
+   height: 80%; 
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+grid-column-start: 1;
+grid-column-end: 4;
+grid-row-start: 5;
+grid-row-end: 6;
+
+}
+
+.seasonal{
+  width: 22%;
+  max-height: 100%;
+text-align: left;
+overflow-y: scroll;
+overflow-x: hidden;
+display:inline-block;
+float: left;
+margin-left: 4.5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+background: #FFFFFF;
+padding: 2%;
+border-top: 1px solid #DB3C26;
+border-left: 1px solid #DB3C26;
+
+}
+
+/*.seasonal:hover, .best-selling:hover, .current-deals:hover{
+  overflow-y:scroll;
+}*/
+
+.s-books, .b-books, .r-books{
+  max-height: 15%;
+  padding-bottom: 2%;
+    font-size: 1vw;
+
+}
+.s-books > a > img, .b-books > a >img, .r-books > a > img {
+  width: 24%;
+  height: 24%;
+  padding-right: 2%;  
+}
+
+.s-books > a, .b-books > a, .r-books > a{
+  text-decoration: none;
+  display: inline;
+  display: flex;
+  align-items:center;
+  padding-bottom: 6%;
+}
+.current-deals > h3, .seasonal > h3, .best-selling > h3{
+  padding-bottom: 5%;
+}
+
+.best-selling{
+ width: 22%;
+  max-height: 100%;
+text-align: left;
+overflow-y: scroll;
+overflow-x: hidden;
+display:inline-block;
+margin: 0 auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+background: #FFFFFF;
+padding: 2%;
+border-top: 1px solid #DB3C26;
+border-left: 1px solid #DB3C26;
+}
+
+.current-deals{
+ width: 22%;
+  max-height: 100%;
+text-align: left;
+overflow-y: scroll;
+overflow-x: hidden;
+display:inline-block;
+float: right;
+margin-right: 4.5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+background: #FFFFFF;
+padding: 2%;
+border-top: 1px solid #DB3C26;
+border-left: 1px solid #DB3C26;
+}
+
+.seasonal::-webkit-scrollbar, .best-selling::-webkit-scrollbar, .current-deals::-webkit-scrollbar {
+    width: 3px;
+}
+
+.seasonal::-webkit-scrollbar-track, .best-selling::-webkit-track, .current-deals::-webkit-track {
+    background: #f2ebe7;
+}
+.seasonal::-webkit-scrollbar-thumb, .best-selling::-webkit-scrollbar-thumb, .current-deals::-webkit-scrollbar-thumb {
+    background: #DB3C26;
+}
+
+.footer{
+  width: 100%;
+   height: auto; 
+  background-color: #DB3C26;
+  display: block;
+padding-top: 2.5%;
+padding-bottom: 2%;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end:7;
+  
+}
+
+#map-container{
+      position: absloute;
+     width: 40%;
+     height: auto;
+  float: right;
+  margin-right: 22%;
+}
+
+#locations-map{
+  border: 1px dashed #FFFFFF;
+  padding: 0.5%;
+       position: absolute;
+     width: 40%;
+     height: 40%;
+     
+}
+
+#locations-label{
+writing-mode: vertical-rl;
+font-size: 3.8vw;
+font-weight: 800;
+color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+display: inline;
+float: right;
+margin-right: 1%;
+}
+
+#footer-links{
+  float: left;
+/*  display: inline;*/
+  text-align: left;
+    place-self: center;
+    margin-left: 1.8%;
+}
+ #footer-links > a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-bottom:6%;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#footer-links > a:hover{
+  text-decoration: underline;
+}
+
+#social-media-container{
+  display: block;
+  width: auto;
+    margin-top: 5%;
+
+}
+
+.social-media > img{
+  height: 3vh;
+  width: 1.7vw;
+}
+
+.social-media {
+  display: inline;
+  padding: 2%;
+}
